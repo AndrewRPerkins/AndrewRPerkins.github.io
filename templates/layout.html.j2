@@ -15,28 +15,30 @@
 </head>
 
 <body>
-<div class="d-flex w-100 h-100 p-3 mx-auto flex-column text-center">
-    <header class="masthead mb-auto header-container">
-        <div class="inner">
-            <h3 class="masthead-brand">Dimension Media</h3>
-            <nav class="nav nav-masthead justify-content-center">
-                <a class="nav-link {% if page['name']=='home' %}active{% endif %}" href="#">Home</a>
-                <a class="nav-link {% if page['name']=='shows' %}active{% endif %}" href="#">Shows</a>
-                <a class="nav-link {% if page['name']=='contact' %}active{% endif %}" href="#">Contact</a>
-            </nav>
+<header>
+    <div class="container">
+        <div class="row pt-3">
+            <div class="offset-md-2 col-md-8 my-1">
+                <h3 class="masthead-brand">Dimension Media</h3>
+                <nav class="nav nav-masthead justify-content-center">
+                    <a class="nav-link {% if page['name']=='home' %}active{% endif %}" href="home">Home</a>
+                    <a class="nav-link {% if page['name']=='shows' %}active{% endif %}" href="shows">Shows</a>
+                    <a class="nav-link {% if page['name']=='contact' %}active{% endif %}" href="contact">Contact</a>
+                </nav>
+            </div>
         </div>
-    </header>
+    </div>
+</header>
 
-    <main role="main" class="inner cover">
-        {% block content %}{% endblock %}
-    </main>
+<main role="main" class="cover">
+    {% block content %}{% endblock %}
+</main>
 
-    <footer class="mastfoot mt-auto">
-        <div class="inner">
-            {% block footer %}{% endblock %}
-        </div>
-    </footer>
-</div>
+<footer class="mastfoot">
+    <div>
+        {% block footer %}{% endblock %}
+    </div>
+</footer>
 <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

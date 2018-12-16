@@ -1,9 +1,12 @@
 body {
-    background: url('../images/snow.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../images/snow.jpg');
+    background-attachment: fixed;
 }
 
 :root {

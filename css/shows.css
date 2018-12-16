@@ -50,3 +50,7 @@ main {
     color: #000;
     text-shadow: 0 0 0;
 }
+
+.show-header {
+    margin-top: 1rem;
+}

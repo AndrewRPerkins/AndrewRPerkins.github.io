@@ -8,15 +8,22 @@ pages = [
         'name': 'shows',
         'shows': [
             {
-                'name': 'Podblaster',
-                'image': 'podblasters',
-                'description': 'Leading the charge of podcast innovation, the team discusses ' +
-                               'podcasting ideas for the future.'
-            },
-            {
                 'name': 'Backbench Bandits',
                 'image': 'backbench',
-                'description': 'Politics taken lightly'
+                'description': 'Hot takes on Australian politics scandals.',
+                'link': 'https://pod.link/1433761688',
+            },
+            {
+                'name': 'The Choice Less Chosen',
+                'image': 'choice',
+                'description': 'Join us as we explore the world of choose-your-own-adventure books.',
+                'link': 'https://pod.link/1220812943',
+            },
+            {
+                'name': 'Podblaster',
+                'image': 'podblasters',
+                'description': 'Join friends on a quest to find out what makes a good podcast.',
+                'link': 'https://pod.link/1187823014',
             },
         ]
     },

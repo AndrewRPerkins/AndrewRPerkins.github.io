@@ -1,13 +1,13 @@
-body {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url('../images/snow.jpg');
-    background-attachment: fixed;
+header {
+    color: #fff;
+    background: #1E4E96;
 }
+
+body {
+    background: white;
+}
+
+
 
 :root {
     --jumbotron-padding-y: 2rem;

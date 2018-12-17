@@ -2,7 +2,7 @@ from jinja2 import Environment, FileSystemLoader
 
 pages = [
     {
-        'name': 'home',
+        'name': 'index',
         'shows': [
             {
                 'name': 'Keys to the Lodge',

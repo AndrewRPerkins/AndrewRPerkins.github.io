@@ -2,11 +2,15 @@ from jinja2 import Environment, FileSystemLoader
 
 pages = [
     {
-        'name': 'home'
-    },
-    {
-        'name': 'shows',
+        'name': 'home',
         'shows': [
+            {
+                'name': 'Keys to the Lodge',
+                'image': 'keys',
+                'description': 'Data driven commentary on 2019 Australian federal elections.',
+                'new': True,
+                'link': '#',
+            },
             {
                 'name': 'Backbench Bandits',
                 'image': 'backbench',
@@ -16,7 +20,7 @@ pages = [
             {
                 'name': 'The Choice Less Chosen',
                 'image': 'choice',
-                'description': 'Join us as we explore the world of choose-your-own-adventure books.',
+                'description': 'Exploring the world of choose-your-own-adventure books.',
                 'link': 'https://pod.link/1220812943',
             },
             {

@@ -27,6 +27,9 @@ pages = [
             },
         ]
     },
+    {
+        'name': 'contact',
+    },
 ]
 
 

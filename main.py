@@ -9,25 +9,65 @@ pages = [
                 'image': 'keys',
                 'description': 'Data driven commentary on 2019 Australian federal elections.',
                 'new': True,
-                'link': '#',
+                'link': {
+                    'url': '',
+                    'disabled': True,
+                    'title': 'Subscribe'
+                },
+            },
+            {
+                'name': 'Aus Pol Stats',
+                'image': 'aps',
+                'type': 'Website',
+                'description': 'Australian Politics Statistics, tracked daily.',
+                'new': False,
+                'link': {
+                    'url': 'https://twitter.com/AusPolStats?lang=en',
+                    'disabled': False,
+                    'title': 'Twitter'
+                },
             },
             {
                 'name': 'Backbench Bandits',
                 'image': 'backbench',
                 'description': 'Hot takes on Australian politics scandals.',
-                'link': 'https://pod.link/1433761688',
+                'link': {
+                    'url': 'https://pod.link/1433761688',
+                    'disabled': False,
+                    'title': 'Subscribe'
+                },
             },
             {
                 'name': 'The Choice Less Chosen',
                 'image': 'choice',
                 'description': 'Exploring the world of choose-your-own-adventure books.',
-                'link': 'https://pod.link/1220812943',
+                'link': {
+                    'url': 'https://pod.link/1220812943',
+                    'disabled': False,
+                    'title': 'Subscribe'
+                },
             },
             {
                 'name': 'Podblaster',
                 'image': 'podblasters',
                 'description': 'Join friends on a quest to find out what makes a good podcast.',
-                'link': 'https://pod.link/1187823014',
+                'link': {
+                    'url': 'https://pod.link/1187823014',
+                    'disabled': False,
+                    'title': 'Subscribe'
+                },
+            },
+            {
+                'name': 'PyAndy',
+                'image': 'pyandy',
+                'type': 'Videos',
+                'description': 'Live streamed python programming.',
+                'new': False,
+                'link': {
+                    'url': 'https://www.youtube.com/channel/UCT0oEArSloMLL_URLyy2HfA',
+                    'disabled': False,
+                    'title': 'YouTube'
+                },
             },
         ]
     },

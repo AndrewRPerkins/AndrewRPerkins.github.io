@@ -21,6 +21,9 @@
                     <p class="lead">Leading the charge on next generation media content.</p>
                 </div>
             </div>
+            <div class="alert alert-secondary" role="alert">
+                Dimension Media Master Podcast Feed now available. <a href="#" class="alert-link">Subscribe here</a>.
+            </div>
             <div class="row">
                 {% for show in page["shows"] %}
                     <div class="col-sm-4 mb-4">
@@ -29,11 +32,18 @@
                                  src="images/{{ show["image"] }}.jpg"
                                  alt="{{ show["name"] }}">
                             <div class="card-body">
-                                <h5 class="card-title">{{ show["name"] }}{% if show["new"] %} <span class="badge badge-primary">New</span>{% endif %}</h5>
+                                <h5 class="card-title">{{ show["name"] }}{% if show["new"] %}
+                                    <span class="badge badge-primary">New</span>{% endif %}</h5>
                                 <p class="card-text">{{ show["description"] }}</p>
                             </div>
                             <div class="card-footer">
-                                <small class="text-muted">Podcast</small>
+                                <small class="text-muted">{{ show['type'] or 'Podcast' }}</small>
+                                <a href="{{ show["link"]['url'] }}"
+                                   role="button"
+                                   class="btn btn-sm btn-outline-secondary float-right{% if show["link"]['disabled'] %} disabled{% endif %}"
+                                >
+                                    {{ show["link"]["title"] }}
+                                </a>
                             </div>
                         </div>
                     </div>

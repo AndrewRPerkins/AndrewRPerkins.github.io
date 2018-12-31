@@ -22,8 +22,8 @@
                     <p class="lead">Leading the charge on next generation media content.</p>
                 </div>
             </div>
-            <div class="alert alert-secondary" role="alert">
-                Dimension Media Master Podcast Feed now available. <a href="#" class="alert-link">Subscribe here</a>.
+            <div class="alert alert-success" role="alert">
+                Dimension Media Master Podcast Feed now available. <a href="https://pod.link/1447037359" class="alert-link">Subscribe here</a>.
             </div>
             <div class="row">
                 {% for show in page["shows"] %}
@@ -45,6 +45,15 @@
                                 >
                                     {{ show["link"]["title"] }}
                                 </a>
+
+                                {% if show["link2"] %}
+                                    <a href="{{ show["link2"]['url'] }}"
+                                       role="button"
+                                       class="btn btn-sm btn-outline-secondary float-right mr-1{% if show["link2"]['disabled'] %} disabled{% endif %}"
+                                    >
+                                        {{ show["link2"]["title"] }}
+                                    </a>
+                                {% endif %}
                             </div>
                         </div>
                     </div>

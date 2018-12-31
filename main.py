@@ -10,8 +10,8 @@ pages = [
                 'description': 'Data driven commentary on 2019 Australian federal elections.',
                 'new': True,
                 'link': {
-                    'url': '',
-                    'disabled': True,
+                    'url': 'https://pod.link/1447060366',
+                    'disabled': False,
                     'title': 'Subscribe'
                 },
             },
@@ -25,6 +25,11 @@ pages = [
                     'url': 'https://twitter.com/AusPolStats?lang=en',
                     'disabled': False,
                     'title': 'Twitter'
+                },
+                'link2': {
+                    'url': 'https://auspolstats.com',
+                    'disabled': False,
+                    'title': 'Website'
                 },
             },
             {
